@@ -26,11 +26,12 @@ class _LoginFormState extends State<LoginForm> {
               keyboardType: TextInputType.emailAddress,
               cursorColor: Config.primatyColor,
               decoration: const InputDecoration(
-                  labelText: 'Email',
-                  hintText: 'Email address',
-                  alignLabelWithHint: true,
-                  prefixIcon: Icon(Icons.email_outlined),
-                  prefixIconColor: Config.primatyColor),
+                labelText: 'Email',
+                hintText: 'Email address',
+                alignLabelWithHint: true,
+                prefixIcon: Icon(Icons.email_outlined),
+                // prefixIconColor: Config.primatyColor
+              ),
             ),
             Config.spaceSmall,
             TextFormField(
@@ -43,7 +44,7 @@ class _LoginFormState extends State<LoginForm> {
                   hintText: 'password',
                   alignLabelWithHint: true,
                   prefixIcon: Icon(Icons.lock_outline),
-                  prefixIconColor: Config.primatyColor,
+                  // prefixIconColor: Config.primatyColor,
                   suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
@@ -59,7 +60,9 @@ class _LoginFormState extends State<LoginForm> {
               width: double.infinity,
               title: 'SignIn',
               disable: false,
-              onPress: () {},
+              onPress: () {
+                Navigator.of(context).pushNamed("main");
+              },
             )
           ],
         ));

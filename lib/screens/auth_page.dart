@@ -1,4 +1,5 @@
 import 'package:doctorappointment/components/login_form.dart';
+import 'package:doctorappointment/components/social_button.dart';
 import 'package:doctorappointment/utils/config.dart';
 import 'package:doctorappointment/utils/text.dart';
 import 'package:flutter/material.dart';
@@ -16,9 +17,11 @@ class _AuthPageState extends State<AuthPage> {
     Config().init(context);
     return Scaffold(
         body: Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       child: SafeArea(
           child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             Apptext.enText['welcome_text']!,
@@ -56,7 +59,33 @@ class _AuthPageState extends State<AuthPage> {
           Config.spaceSmall,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [],
+            children: const [
+              SocialButton(social: 'google'),
+              SocialButton(social: 'facebook'),
+            ],
+          ),
+          Config.spaceSmall,
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                Apptext.enText['signUp_text']!,
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.grey.shade500),
+              ),
+              TextButton(
+                  child: const Text(
+                    "Sign Up",
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black),
+                  ),
+                  onPressed: () {})
+            ],
           )
         ],
       )),
