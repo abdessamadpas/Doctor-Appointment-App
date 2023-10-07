@@ -6,11 +6,6 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![1](https://github.com/abdessamadpas/Doctor-Appointment-App/assets/53188247/f1c358d2-c6b9-4123-a345-172c5ca65a4f)
+![2](https://github.com/abdessamadpas/Doctor-Appointment-App/assets/53188247/c7b412b7-e323-422d-8b48-b4df88074a00)
+![3](https://github.com/abdessamadpas/Doctor-Appointment-App/assets/53188247/34be3a6e-aab1-4191-9f68-740821efd97c)
