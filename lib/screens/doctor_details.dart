@@ -279,7 +279,7 @@ class _DoctorDetailsState extends State<DoctorDetails> {
               children: [
                 Row(
                   children: const [
-                    Text('Consumation price',
+                    Text('Consummation price',
                         style: TextStyle(
                             color: Color.fromARGB(255, 170, 170, 170),
                             fontSize: 17.0,

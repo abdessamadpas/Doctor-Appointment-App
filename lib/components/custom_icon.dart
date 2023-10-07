@@ -22,7 +22,7 @@ class CustomIcon extends StatelessWidget {
           },
           child: Container(
               width: double.infinity,
-              height: 50,
+              height: 40,
               decoration: BoxDecoration(
                   color: colorBtn, borderRadius: BorderRadius.circular(10)),
               child: Center(
